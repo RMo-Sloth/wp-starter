@@ -1,0 +1,1 @@
+<footer>I AM A CUSTOM FOOTER</footer>
