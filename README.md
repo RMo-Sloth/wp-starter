@@ -28,10 +28,10 @@ Use comments to let wordpress detect your template. More details in [Official Th
 Now enable the theme in wordpress.
 
 ## Header -> Navigation
-
 There is a basic implementation for a navigation menu of a max of 2 depth. The menu s registered in the `functions.php` file, invoked in the `header.php` file and styled in `style.css` file. You should/could replace it with a more advanced implementation that suits your needs.
 
 ## Footer
+There is a basic implementation of a footer. Sidebars have been registered in `functions.php` (called: footer-1, footer-2 and footer-3). They are loaded in the footer template `footer.php`. Note that the sidebars are formatted in a block-editor friendly output. 
 
 ## last
 
