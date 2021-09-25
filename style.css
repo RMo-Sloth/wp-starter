@@ -119,3 +119,42 @@ footer .container .disclaimer a {
   color: var( --color-1 );
 }
 /* END FOOTER */
+
+/* POST LIST */
+ul.post-list {
+  display: flex;
+  padding: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul.post-list>li {
+  display: flex;
+  flex-direction: column;
+  background: var( --color-3 );
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 0 300px;
+  max-width: 600px;
+}
+ul .wp-post-image {
+  width: 100%;
+  height: auto;
+}
+ul.post-list>li .bottom {
+  margin-top: auto;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+ul.post-list>li h2 {
+  text-align: center;
+}
+ul.post-list>li .bottom a.read-more-btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var( --background-1 );
+  font-weight: bold;
+  color: var( --color-1 );
+  text-decoration: none;
+}
+/* END POST LIST */
