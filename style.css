@@ -18,6 +18,7 @@ Domain Path: /languages
 body {
   margin: 0;
   padding: 0;
+  overflow-wrap: anywhere;
 }
 /* COLORS */
 :root {
@@ -26,6 +27,7 @@ body {
   --hover-color: red;
   --color-3: #f9f9f9;
   --color-4: #f1f1f1;
+  --color-5: #999;
 }
 /* END COLORS */
 
@@ -158,3 +160,38 @@ ul.post-list>li .bottom a.read-more-btn {
   text-decoration: none;
 }
 /* END POST LIST */
+
+/* POST LIST NAVIGATION */
+.pagination {
+  margin-bottom: 1rem;
+  background: var( --background-1 );
+  color: var( --color-1 );
+}
+.pagination .nav-links {
+  display: flex;
+  max-width: 1000px;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  font-size: 1.3rem;
+  justify-content: center;
+}
+
+.pagination .nav-links a {
+  color: var( --color-1 );
+  text-decoration: none;
+}
+.pagination .nav-links a:hover {
+  text-decoration: underline;
+}
+.pagination .nav-links .page-numbers {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.pagination .nav-links span.page-numbers.current {
+  color: var( --color-5 ); 
+}
+/* END POST LIST NAVIGATION*/

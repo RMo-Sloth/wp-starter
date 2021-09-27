@@ -18,3 +18,9 @@
     print('</li>');
   endwhile;
   print('</ul>');
+
+  the_posts_pagination([
+    'class' => 'pagination',
+    'prev_next' => false
+  ]);
+
