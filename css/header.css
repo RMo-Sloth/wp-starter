@@ -1,0 +1,58 @@
+/* First Level Nav */
+
+nav.navbar .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  background: var( --background-1);
+}
+
+nav.navbar>ul>li {
+  float: left;
+}
+
+nav.navbar>ul>li>a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: var( --color-1);
+}
+
+nav.navbar>ul>li>a:hover, nav.navbar>ul>li>a:focus {
+  background-color: var( --hover-color);
+}
+
+/* Second Level Nav */
+
+nav.navbar>ul>li>ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 0;
+  background-color: var( --color-3);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav.navbar>ul>li:focus-within>ul, nav.navbar>ul>li:hover>ul {
+  display: block;
+}
+
+nav.navbar>ul>li>ul>li {
+  display: block;
+}
+
+nav.navbar>ul>li>ul>li>a {
+  display: block;
+  padding: 14px 16px;
+  background: var( --color-1);
+  color: var( --background-1);
+  text-decoration: none;
+  text-decoration: none;
+  text-align: left;
+}
+
+nav.navbar>ul>li>ul>li>a:hover, nav.navbar>ul>li>ul>li>a:focus {
+  background-color: var( --color-4);
+}
