@@ -50,6 +50,23 @@ function theme_customize_colors( $wp_customize ) {
   ]);
   $wp_customize->add_control( $color_4_control );
 
+  // add color 5
+  $color_5 = '#999';
+  $wp_customize->add_setting(
+    'theme_color_5',
+    [
+      'type' => 'theme_mod',
+      'default' => $color_5,
+      'sanitize_callback' => 'sanitize_hex_color'
+    ]
+  );
+
+  $color_5_control = new WP_Customize_Color_Control( $wp_customize, 'theme_color_5', [
+    'label' => __('Label 5', 'wp-tester' ),
+    'section' => 'colors'
+  ]);
+  $wp_customize->add_control( $color_5_control );
+
   // add color 7
   $wp_customize->add_setting(
     'theme_color_7',
@@ -75,12 +92,14 @@ function theme_css_colors() {
         --color-1: %s;
         --color-3: %s;
         --color-4: %s;
+        --color-5: %s;
         --color-7: %s;
       }
     </style>",
     get_theme_mod( 'theme_color_1', '#FFF' ),
     get_theme_mod( 'theme_color_2', '#F9F9F9' ),
     get_theme_mod( 'theme_color_4', '#f1f1f1' ),
+    get_theme_mod( 'theme_color_5', '#999' ),
     get_theme_mod( 'theme_color_7', '#333' )
   );
 }
