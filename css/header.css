@@ -5,7 +5,7 @@ nav.navbar .menu {
   margin: 0;
   list-style: none;
   overflow: hidden;
-  background: var( --background-1);
+  background: var( --color-7);
 }
 
 nav.navbar>ul>li {
@@ -20,7 +20,7 @@ nav.navbar>ul>li>a {
 }
 
 nav.navbar>ul>li>a:hover, nav.navbar>ul>li>a:focus {
-  background-color: var( --hover-color);
+  background-color: var( --color-6 );
 }
 
 /* Second Level Nav */
@@ -47,7 +47,7 @@ nav.navbar>ul>li>ul>li>a {
   display: block;
   padding: 14px 16px;
   background: var( --color-1);
-  color: var( --background-1);
+  color: var( --color-7);
   text-decoration: none;
   text-decoration: none;
   text-align: left;

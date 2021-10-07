@@ -22,12 +22,12 @@ body {
 }
 /* COLORS */
 :root {
-  --background-1: #333;
+  --color-7: #333;
   --color-1: #FFF;
-  --hover-color: red;
   --color-3: #f9f9f9;
   --color-4: #f1f1f1;
   --color-5: #999;
+  --color-6: red;
 }
 /* END COLORS */
 
@@ -63,7 +63,7 @@ ul.post-list>li h2 {
 ul.post-list>li .bottom a.read-more-btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  background: var( --background-1 );
+  background: var( --color-7 );
   font-weight: bold;
   color: var( --color-1 );
   text-decoration: none;
@@ -73,7 +73,7 @@ ul.post-list>li .bottom a.read-more-btn {
 /* POST LIST NAVIGATION */
 .pagination {
   margin-bottom: 1rem;
-  background: var( --background-1 );
+  background: var( --color-7 );
   color: var( --color-1 );
 }
 .pagination .nav-links {
