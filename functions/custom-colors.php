@@ -67,15 +67,26 @@ function theme_customize_colors( $wp_customize ) {
   ]);
   $wp_customize->add_control( $color_5_control );
 
+  // add color 6
+  $color_6 = '#F00';
+  $wp_customize->add_setting( 'theme_color_6', [
+    'type' => 'theme_mod',
+    'default' => $color_6,
+    'sanitize_callback' => 'sanitize_hex_color'
+  ]);
+
+  $color_6_control = new WP_Customize_Color_Control( $wp_customize, 'theme_color_6', [
+    'label' => __( 'Color 6', 'wp-starter' ),
+    'section' => 'colors'
+  ]);
+  $wp_customize->add_control( $color_6_control );
+
   // add color 7
-  $wp_customize->add_setting(
-    'theme_color_7',
-    [
-      'type' => 'theme_mod',
-      'default' => '#333',
-      'sanitize_callback' => 'sanitize_hex_color'
-    ]
-  );
+  $wp_customize->add_setting( 'theme_color_7', [
+    'type' => 'theme_mod',
+    'default' => '#333',
+    'sanitize_callback' => 'sanitize_hex_color'
+  ]);
 
   $color_7_control = new WP_Customize_Color_Control( $wp_customize, 'theme_color_7', [
     'label' => __( 'Color 7', 'wp-starter' ),
@@ -93,6 +104,7 @@ function theme_css_colors() {
         --color-3: %s;
         --color-4: %s;
         --color-5: %s;
+        --color-6: %s;
         --color-7: %s;
       }
     </style>",
@@ -100,6 +112,7 @@ function theme_css_colors() {
     get_theme_mod( 'theme_color_2', '#F9F9F9' ),
     get_theme_mod( 'theme_color_4', '#f1f1f1' ),
     get_theme_mod( 'theme_color_5', '#999' ),
+    get_theme_mod( 'theme_color_6', '#F00' ),
     get_theme_mod( 'theme_color_7', '#333' )
   );
 }

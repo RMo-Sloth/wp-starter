@@ -20,11 +20,6 @@ body {
   padding: 0;
   overflow-wrap: anywhere;
 }
-/* COLORS */
-:root {
-  --color-6: red;
-}
-/* END COLORS */
 
 /* POST LIST */
 ul.post-list {
