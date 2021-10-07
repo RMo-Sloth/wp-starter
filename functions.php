@@ -1,4 +1,5 @@
 <?php
+require_once get_template_directory() . '/functions/custom-colors.php';
 
 // GENERAL SETUP
 function theme_support_title_tag() {
