@@ -40,6 +40,15 @@ function theme_register_sidebars() {
     'before_sidebar' => '<div class="sidebar footer-3">',
     'after_sidebar' => '</div>',
   ] );
+
+  register_sidebar([
+    'id' => 'front-page-top',
+    'name' => __( 'Home top', 'wp-starter' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_sidebar' => '<div class="sidebar front-page-top">',
+    'after_sidebar' => '</div>',
+  ]);
 }
 add_action( 'widgets_init', 'theme_register_sidebars' );
 
