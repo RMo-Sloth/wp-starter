@@ -94,3 +94,11 @@ ul.post-list>li .bottom a.read-more-btn {
   color: var( --color-5 ); 
 }
 /* END POST LIST NAVIGATION*/
+
+/* PAGE  */
+.page.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+/*  END PAGE */

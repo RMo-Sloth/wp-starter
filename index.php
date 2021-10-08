@@ -3,7 +3,7 @@ get_header();
 
 if( have_posts() ):
   if( is_singular() ):
-    echo wpautop( 'This is a single post, should be rendered!' );
+    get_template_part( 'partials/page' );
   else:
     get_template_part( 'partials/post-list' );
   endif;
