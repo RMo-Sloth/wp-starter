@@ -2,10 +2,10 @@
 get_header();
 
 if( have_posts() ):
-  if( $wp_query->post_count > 1 ):
-    get_template_part( 'partials/post-list' );
-  else:
+  if( is_singular() ):
     echo wpautop( 'This is a single post, should be rendered!' );
+  else:
+    get_template_part( 'partials/post-list' );
   endif;
 else:
   print('<p><b>No posts could be found</b></p>');
