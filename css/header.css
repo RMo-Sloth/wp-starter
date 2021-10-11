@@ -1,3 +1,17 @@
+.top-bar {
+  display: flex;
+  background: var( --color-7);
+  overflow: visible;
+}
+.top-bar>nav {
+  flex: 1 0 auto;
+  height: 50px;
+}
+.top-bar .custom-logo-link {
+  height: 50px;
+  padding-right: 1rem;
+}
+
 /* First Level Nav */
 
 nav.navbar .menu {
@@ -5,15 +19,17 @@ nav.navbar .menu {
   margin: 0;
   list-style: none;
   overflow: hidden;
-  background: var( --color-7);
 }
 
 nav.navbar>ul>li {
   float: left;
+  height: 50px;
 }
 
 nav.navbar>ul>li>a {
   display: inline-block;
+  box-sizing: border-box;
+  height: 50px;
   text-decoration: none;
   padding: 14px 16px;
   color: var( --color-1);
@@ -35,7 +51,7 @@ nav.navbar>ul>li>ul {
   z-index: 1;
 }
 
-nav.navbar>ul>li:focus-within>ul, nav.navbar>ul>li:hover>ul {
+nav.navbar>ul>li:focus-within>ul, nav.navbar>ul>li:hover>ul, nav.navbar>ul>li>ul:hover {
   display: block;
 }
 

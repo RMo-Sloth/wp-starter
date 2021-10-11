@@ -13,6 +13,18 @@ function theme_nav_menus() {
 }
 add_action('after_setup_theme', 'theme_nav_menus');
 
+function theme_custom_logo() {
+  add_theme_support( 'custom-logo', [
+    'height'               => 50,
+    'width'                => 50,
+    'flex-height'          => false,
+    'flex-width'           => true,
+    'header-text'          => array( 'site-title', 'site-description' ),
+    // 'unlink-homepage-logo' => true, 
+  ] );
+}
+add_action('after_setup_theme', 'theme_custom_logo');
+
 function theme_register_sidebars() {
   register_sidebar( [
     'id' => 'footer-1',
