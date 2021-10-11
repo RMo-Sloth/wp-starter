@@ -48,10 +48,10 @@ nav.navbar>ul>li>ul {
   padding: 0;
   background-color: var( --color-3);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
 }
 
-nav.navbar>ul>li:focus-within>ul, nav.navbar>ul>li:hover>ul, nav.navbar>ul>li>ul:hover {
+nav.navbar>ul>li:focus-within>ul, nav.navbar>ul>li:hover>ul {
   display: block;
 }
 
