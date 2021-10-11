@@ -16,11 +16,9 @@ add_action('after_setup_theme', 'theme_nav_menus');
 function theme_custom_logo() {
   add_theme_support( 'custom-logo', [
     'height'               => 50,
-    'width'                => 50,
+    'width'                => 100,
     'flex-height'          => false,
-    'flex-width'           => true,
-    'header-text'          => array( 'site-title', 'site-description' ),
-    // 'unlink-homepage-logo' => true, 
+    'flex-width'           => false,
   ] );
 }
 add_action('after_setup_theme', 'theme_custom_logo');
