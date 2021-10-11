@@ -106,3 +106,10 @@ ul.post-list>li .bottom a.read-more-btn {
   padding: 1rem;
 }
 /*  END PAGE */
+
+/* IMAGES */
+/* Bugfix distorted images on e.g. chrome */
+.wp-block-image img {
+  height: auto;
+}
+/* END IMAGES */
