@@ -108,6 +108,15 @@ ul.post-list>li .bottom a.read-more-btn {
 }
 /*  END PAGE */
 
+/* SINGLE  */
+.single.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  overflow-y: auto;
+}
+/*  END PAGE */
+
 /* IMAGES */
 /* Bugfix distorted images on e.g. chrome */
 .wp-block-image img {
