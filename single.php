@@ -9,10 +9,12 @@ if( have_posts() ):
 
             printf('
             <div class="meta">
+                <span>%s</span><br>
                 <span>%s</span>
             </div>
             ',
-            __('By: ') . get_the_author_posts_link()
+            __('By: ') . get_the_author_posts_link(),
+            __('Categories: ') . get_the_category_list( ', ' )
             );
 
             the_content();
