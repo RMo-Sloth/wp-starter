@@ -12,7 +12,7 @@ if( have_posts() ):
     get_template_part( 'partials/post-list' );
   endif;
 else:
-  print('<p><b>No posts could be found</b></p>');
+  printf('<p><b>%s</b></p>', __( 'No posts could be found', 'wp-starter' ) );
 endif;
 
 get_footer();
