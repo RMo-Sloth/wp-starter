@@ -7,19 +7,11 @@ if( have_posts() ):
             
             the_title('<h1>', '</h1>');
 
-            printf('
-            <div class="meta">
-                <span>%s</span><br>
-                <span>%s</span><br>
-                <span>%s</span>
-            </div>
-            ',
-            __('By: ', 'wp-tester') . get_the_author_posts_link(),
-            __('Categories: ', 'wp-tester') . get_the_category_list( ', ' ),
-            __('Date: ', 'wp-tester' ) . get_the_date('jS \of F Y')
-            );
+            get_template_part( 'partials/post-meta' );
 
             the_content();
+            
+            comments_template();
 
         print('</div>');
     endwhile;
