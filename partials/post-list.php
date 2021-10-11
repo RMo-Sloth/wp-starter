@@ -4,7 +4,7 @@
     printf(
       '<li id="post-%s" class="%s">',
       get_the_ID(),
-      implode( " ", get_post_class() )
+      esc_attr( implode( ' ', get_post_class() ) )
     );
     if( has_post_thumbnail() ):
       the_post_thumbnail();

@@ -37,6 +37,10 @@ ul.post-list>li {
   margin: 1rem;
   flex: 1 0 300px;
   max-width: 600px;
+  border-top: 5px solid var( --color-6 );
+}
+ul.post-list>li.sticky {
+  border-top: 5px solid var( --color-7 );
 }
 ul .wp-post-image {
   width: 100%;
