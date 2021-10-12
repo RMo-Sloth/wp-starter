@@ -28,13 +28,13 @@ ul.post-list {
   margin: auto;
   flex-wrap: wrap;
   list-style: none;
+  gap: 1rem;
 }
 ul.post-list>li {
   display: flex;
   flex-direction: column;
   background: var( --color-3 );
   padding: 1rem;
-  margin: 1rem;
   flex: 1 0 300px;
   max-width: 600px;
   border-top: 5px solid var( --color-6 );
@@ -110,6 +110,15 @@ ul.post-list>li .bottom a.read-more-btn {
 
 /* SINGLE  */
 .single.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  overflow-y: auto;
+}
+/*  END PAGE */
+
+/* ARCHIVE */
+.archive .container {
   max-width: 1000px;
   margin: auto;
   padding: 1rem;
