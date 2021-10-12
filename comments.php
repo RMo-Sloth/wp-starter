@@ -2,5 +2,4 @@
 
 if( comments_open() === false ) return;
 
-
-print('COMMENT TEMPLATE');
+comment_form();
