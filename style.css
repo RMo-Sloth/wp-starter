@@ -66,7 +66,7 @@ ul.post-list>li .bottom a.read-more-btn {
 
 /* POST LIST NAVIGATION */
 .pagination {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   background: var( --color-7 );
   color: var( --color-1 );
 }
@@ -125,6 +125,15 @@ ul.post-list>li .bottom a.read-more-btn {
   overflow-y: auto;
 }
 /*  END PAGE */
+
+/* BLOG PAGE */
+.blog .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  overflow-y: auto;
+}
+/* END BLOG PAGE */
 
 /* IMAGES */
 /* Bugfix distorted images on e.g. chrome */
