@@ -4,7 +4,9 @@ get_header();
 print( '<main class="container">' );
   if( have_posts() ):
     if( is_singular() ):
-      get_template_part( 'partials/page' );
+      the_title('<h1>', '</h1>');
+      the_content();
+      comments_template();
     else:
       get_template_part( 'partials/post-list' );
     endif;
