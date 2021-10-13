@@ -1,7 +1,7 @@
 <?php 
 get_header();
 
-print('<div class="page container">');
+print('<main class="container">');
     printf(
         '<h1>%s</h1>',
         __( '404: Page Not Found', 'wp-test' )
@@ -11,6 +11,6 @@ print('<div class="page container">');
         __( "We couldn't find the webpage you are looking for. Maybe you can find what you are looking for by using the navigation", 'wp-test' )
     );
     get_search_form(); 
-print('</div>');
+print('</main>');
 
 get_footer();
