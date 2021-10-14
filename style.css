@@ -159,3 +159,10 @@ ul.post-list>li .bottom a.read-more-btn {
   height: auto;
 }
 /* END IMAGES */
+
+/* POST_META PARTIAL */
+.meta {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+/* END POST_META PARTIAL */
