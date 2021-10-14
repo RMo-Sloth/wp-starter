@@ -31,3 +31,14 @@ textarea, input {
 input[type='checkbox'] {
 	width: auto;
 }
+
+/* block (container) elements */
+header, footer, aside, article, section, div {
+	clear: both;
+}
+
+/* images */
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
