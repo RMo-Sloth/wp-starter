@@ -2,8 +2,8 @@
 
 function theme_support_logo() {
     add_theme_support( 'custom-logo', [
-      'height'               => 50,
-      'width'                => 100,
+      'height'               => 100,
+      'width'                => 200,
       'flex-height'          => false,
       'flex-width'           => false,
     ] );
