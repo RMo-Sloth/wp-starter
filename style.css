@@ -23,20 +23,15 @@ body {
 
 /* POST LIST */
 ul.post-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 0;
-  margin: auto;
-  flex-wrap: wrap;
   list-style: none;
   gap: 1rem;
 }
 ul.post-list>li {
-  display: flex;
-  flex-direction: column;
   background: var( --color-3 );
   padding: 1rem;
-  flex: 1 0 300px;
-  max-width: 600px;
   border-top: 5px solid var( --color-6 );
 }
 ul.post-list>li.sticky {
@@ -47,7 +42,6 @@ ul .wp-post-image {
   height: auto;
 }
 ul.post-list>li .bottom {
-  margin-top: auto;
   padding: 1.5rem 0;
   text-align: center;
 }
@@ -61,6 +55,12 @@ ul.post-list>li .bottom a.read-more-btn {
   font-weight: bold;
   color: var( --color-1 );
   text-decoration: none;
+}
+
+@media screen and (max-width: 700px ) {
+  ul.post-list {
+    grid-template-columns: 1fr;
+  }
 }
 /* END POST LIST */
 
