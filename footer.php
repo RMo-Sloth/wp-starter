@@ -1,5 +1,5 @@
 <?php
-  print('<footer><div class="container">');
+  print('<footer id="theme-footer"><div class="container">');
 
     if( is_active_sidebar('footer-1') ):
       dynamic_sidebar( 'footer-1' );

@@ -1,24 +1,24 @@
-footer {
+footer#theme-footer {
   background: var(--color-7);
   color: var( --color-3);
 }
 
-footer .container {
+footer#theme-footer .container {
   max-width: 1000px;
   margin: auto;
   display: flex;
 }
 
-footer .container .sidebar {
+footer#theme-footer .container .sidebar {
   padding: 1rem;
   flex: 1 1 300px;
 }
 
 @media( max-width: 800px) {
-  footer .container {
+  footer#theme-footer .container {
     flex-direction: column;
   }
-  footer .container .sidebar {
+  footer#theme-footer .container .sidebar {
     max-width: 400px;
     margin: auto;
     flex: 1 1 auto;
