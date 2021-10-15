@@ -42,3 +42,14 @@ figcaption {
 	text-align: center;
 	font-style: italic;
 }
+
+/* blockquote */
+blockquote {
+	border-left: 0.3rem solid var( --color-7 );
+	padding-left: 1rem;
+}
+
+.wp-block-pullquote blockquote {
+	border-left: 0;
+	padding-left: 0;
+}
