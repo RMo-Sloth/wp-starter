@@ -57,3 +57,27 @@ blockquote {
 	border-left: 0;
 	padding-left: 0;
 }
+
+/* block buttons bugfix (editor) */
+.wp-block-button {
+	margin:  0.5rem;
+}
+.wp-block-button.is-style-squared>.wp-block-button__link {
+	border-radius: 0;
+}
+
+/* block alignment */
+.alignright {
+	float: right;
+	margin:  0.5rem 0 0.5rem 0.5rem;
+}
+
+.alignleft {
+	float: left;
+	margin:  0.5rem 0.5rem 0.5rem 0;
+}
+
+.aligncenter {
+	margin:  0.5rem;
+}
+
