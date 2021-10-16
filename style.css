@@ -153,13 +153,6 @@ ul.post-list>li .bottom a.read-more-btn {
 }
 /* END BLOG PAGE */
 
-/* IMAGES */
-/* Bugfix distorted images on e.g. chrome */
-.wp-block-image img {
-  height: auto;
-}
-/* END IMAGES */
-
 /* POST_META PARTIAL */
 .meta {
   margin-bottom: 1rem;
