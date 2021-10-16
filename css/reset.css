@@ -1,4 +1,4 @@
-html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6  {
+html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, .wp-block-gallery   {
 	margin: 0;
 	margin-bottom: 0.5rem;
 	padding: 0;
@@ -69,15 +69,15 @@ blockquote {
 /* block alignment */
 .alignright {
 	float: right;
-	margin:  0.5rem 0 0.5rem 0.5rem;
+	margin:  0 0 0 0.5rem;
 }
 
 .alignleft {
 	float: left;
-	margin:  0.5rem 0.5rem 0.5rem 0;
+	margin:  0 0.5rem 0 0;
 }
 
 .aligncenter {
-	margin:  0.5rem;
+	margin:  0;
 }
 
