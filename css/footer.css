@@ -1,11 +1,12 @@
 footer#theme-footer {
   background: var(--color-7);
   color: var( --color-3);
+  margin-top: 1rem;
 }
 
 footer#theme-footer .container {
   max-width: 1000px;
-  margin: auto;
+  margin:  auto;
   display: flex;
 }
 
