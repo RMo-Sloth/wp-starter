@@ -1,4 +1,4 @@
-html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, .wp-block-gallery   {
+html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, .wp-block-gallery, .wp-block-column   {
 	margin: 0;
 	margin-bottom: 0.5rem;
 	padding: 0;
@@ -10,6 +10,10 @@ html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea,
 
 *:first-child {
 	margin-top: 0;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

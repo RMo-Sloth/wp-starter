@@ -99,59 +99,28 @@ ul.post-list>li .bottom a.read-more-btn {
 }
 /* END POST LIST NAVIGATION*/
 
-/* PAGE  */
-.page .container {
+/* WIDE AND FULL ALIGNMENT  */
+.container {
   max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
+  padding: 1rem 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-/*  END PAGE */
-
-/* SINGLE  */
-.single.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
+.container>* {
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
-/*  END PAGE */
-
-/* ARCHIVE */
-.archive .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
+.container>*.alignwide {
+  width: 100%;
+  padding: 0;
 }
-/*  END PAGE */
-
-/* BLOG PAGE */
-.blog .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
+.container>*.alignfull {
+  position: relative;
+  left: calc( 50% - 50vw );
+  width: 100vw;
+  padding: 0 0;
 }
-/* END BLOG PAGE */
-
-/* SEARCH RESULTS PAGE */
-.search .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
-}
-/* SEARCH RESULTS PAGE */
-
-/* 404 PAGE */
-.error404 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
-  overflow-y: auto;
-}
-/* END BLOG PAGE */
+/*  END WIDE AND FULL ALIGNMENT */
 
 /* POST_META PARTIAL */
 .meta {
