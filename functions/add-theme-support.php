@@ -18,4 +18,9 @@ add_action('after_setup_theme', 'theme_support_title_tag');
 function theme_support_align_wide() {
   add_theme_support( 'align-wide' );
 }
-add_action('after_setup_theme', 'theme_support_align_wide');  
+add_action('after_setup_theme', 'theme_support_align_wide');
+
+function theme_support_responsive_emmbeds() {
+  add_theme_support( 'responsive-embeds' );
+}
+add_action('after_setup_theme', 'theme_support_responsive_emmbeds');  
