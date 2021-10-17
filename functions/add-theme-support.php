@@ -14,3 +14,8 @@ function theme_support_title_tag() {
     add_theme_support( 'title-tag' );
 }
 add_action('after_setup_theme', 'theme_support_title_tag');  
+
+function theme_support_align_wide() {
+  add_theme_support( 'align-wide' );
+}
+add_action('after_setup_theme', 'theme_support_align_wide');  
