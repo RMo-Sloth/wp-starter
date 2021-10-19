@@ -32,7 +32,7 @@ ul.post-list {
 ul.post-list>li {
   background: var( --color-3 );
   padding: 1rem;
-  border-top: 5px solid var( --color-6 );
+  border-top: 5px solid var( --color-1 );
 }
 ul.post-list>li.sticky {
   border-top: 5px solid var( --color-7 );

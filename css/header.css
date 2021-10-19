@@ -41,7 +41,8 @@ nav.navbar>ul>li>a {
 }
 
 nav.navbar>ul>li>a:hover, nav.navbar>ul>li>a:focus {
-  background-color: var( --color-6 );
+  background-color: var( --color-3 );
+  color: var( --color-1 );
 }
 
 /* Second Level Nav */

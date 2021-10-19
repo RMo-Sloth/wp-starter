@@ -33,20 +33,6 @@ function theme_customize_colors( $wp_customize ) {
   ]);
   $wp_customize->add_control( $color_2_control );
 
-  // add color 6
-  $color_6 = '#F00';
-  $wp_customize->add_setting( 'theme_color_6', [
-    'type' => 'theme_mod',
-    'default' => $color_6,
-    'sanitize_callback' => 'sanitize_hex_color'
-  ]);
-
-  $color_6_control = new WP_Customize_Color_Control( $wp_customize, 'theme_color_6', [
-    'label' => __( 'Color 6', 'wp-starter' ),
-    'section' => 'colors'
-  ]);
-  $wp_customize->add_control( $color_6_control );
-
   // add color 7
   $wp_customize->add_setting( 'theme_color_7', [
     'type' => 'theme_mod',
@@ -68,13 +54,11 @@ function theme_css_colors() {
       :root {
         --color-1: %s;
         --color-3: %s;
-        --color-6: %s;
         --color-7: %s;
       }
     </style>",
     get_theme_mod( 'theme_color_1', '#FFF' ),
     get_theme_mod( 'theme_color_2', '#F9F9F9' ),
-    get_theme_mod( 'theme_color_6', '#F00' ),
     get_theme_mod( 'theme_color_7', '#333' )
   );
 }
