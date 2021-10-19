@@ -95,7 +95,7 @@ ul.post-list>li .bottom a.read-more-btn {
   text-align: center;
 }
 .pagination .nav-links span.page-numbers.current {
-  color: var( --color-5 ); 
+  font-weight: bold;
 }
 /* END POST LIST NAVIGATION*/
 
