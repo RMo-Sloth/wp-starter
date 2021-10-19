@@ -27,5 +27,11 @@ function theme_register_main_stylesheets() {
     [],
     wp_get_theme()->get('Version')
   );
+  // colors.css
+  wp_enqueue_style( 'colors-stylesheet',
+    get_stylesheet_directory_uri() . '/css/colors.css',
+    [],
+    wp_get_theme()->get('Version')
+  );
 }
 add_action( 'wp_enqueue_scripts', 'theme_register_main_stylesheets' );

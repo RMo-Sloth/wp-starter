@@ -1,0 +1,12 @@
+/* 
+    This file contains theme based color styles used by blocks
+    Colors are set in the customizer
+    Color classes are generated in add_theme_support( 'editor-color-palette', [...])
+*/
+
+.has-color-1-color {
+    color: var( --color-1 ) !important;
+}
+.has-color-1-background-color {
+    background-color: var( --color-1 ) !important;
+}
