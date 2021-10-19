@@ -6,7 +6,7 @@ function theme_customize_colors( $wp_customize ) {
     'theme_color_1',
     [
       'type' => 'theme_mod',
-      'default' => '#FFF',
+      'default' => '#000',
       'sanitize_callback' => 'sanitize_hex_color'
     ]
   );
@@ -18,7 +18,7 @@ function theme_customize_colors( $wp_customize ) {
   $wp_customize->add_control( $color_1_control );
 
    // add color 2
-   $color_2 = '#F9F9F9';
+   $color_2 = '#FFF';
    $wp_customize->add_setting( 
     'theme_color_2',
     [
@@ -44,8 +44,8 @@ function theme_css_colors() {
         --color-3: %s;
       }
     </style>",
-    get_theme_mod( 'theme_color_1', '#FFF' ),
-    get_theme_mod( 'theme_color_2', '#F9F9F9' ),
+    get_theme_mod( 'theme_color_1', '#000' ),
+    get_theme_mod( 'theme_color_2', '#FFF' ),
   );
 }
 add_action( 'wp_head', 'theme_css_colors');
