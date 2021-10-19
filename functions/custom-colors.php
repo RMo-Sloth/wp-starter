@@ -33,23 +33,6 @@ function theme_customize_colors( $wp_customize ) {
   ]);
   $wp_customize->add_control( $color_2_control );
 
-  // add color 4
-  $color_4 = 'f1f1f1';
-  $wp_customize->add_setting(
-    'theme_color_4',
-    [
-      'type' => 'theme_mod',
-      'default' => $color_4,
-      'sanitize_callback' => 'sanitize_hex_color'
-    ]
-  );
-
-  $color_4_control = new WP_Customize_Color_Control( $wp_customize, 'theme_color_4', [
-    'label' => __( 'Color 4', 'wp-tester' ),
-    'section' => 'colors'
-  ]);
-  $wp_customize->add_control( $color_4_control );
-
   // add color 5
   $color_5 = '#999';
   $wp_customize->add_setting(
@@ -102,7 +85,6 @@ function theme_css_colors() {
       :root {
         --color-1: %s;
         --color-3: %s;
-        --color-4: %s;
         --color-5: %s;
         --color-6: %s;
         --color-7: %s;
@@ -110,7 +92,6 @@ function theme_css_colors() {
     </style>",
     get_theme_mod( 'theme_color_1', '#FFF' ),
     get_theme_mod( 'theme_color_2', '#F9F9F9' ),
-    get_theme_mod( 'theme_color_4', '#f1f1f1' ),
     get_theme_mod( 'theme_color_5', '#999' ),
     get_theme_mod( 'theme_color_6', '#F00' ),
     get_theme_mod( 'theme_color_7', '#333' )

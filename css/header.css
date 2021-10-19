@@ -75,5 +75,5 @@ nav.navbar>ul>li>ul>li>a {
 }
 
 nav.navbar>ul>li>ul>li>a:hover, nav.navbar>ul>li>ul>li>a:focus {
-  background-color: var( --color-4);
+  background-color: var( --color-2 );
 }
