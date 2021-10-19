@@ -10,7 +10,12 @@ if( have_posts() ):
             get_template_part( 'partials/post-meta' );
 
             the_content();
-            
+
+            wp_link_pages([
+                'before' => '<div class="nav-links">',
+                'after' => '</div>'
+            ]);
+
             comments_template();
 
         print('</div>');

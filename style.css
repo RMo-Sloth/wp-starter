@@ -67,12 +67,12 @@ ul.post-list>li .bottom a.read-more-btn {
 }
 /* END POST LIST */
 
-/* POST LIST NAVIGATION */
+/* LIST NAVIGATION */
 .pagination {
   margin: 1rem 0;
   color: var( --color-1 );
 }
-.pagination .nav-links {
+.nav-links {
   display: flex;
   max-width: 1000px;
   padding: 0.5rem 1rem;
@@ -81,14 +81,14 @@ ul.post-list>li .bottom a.read-more-btn {
   justify-content: center;
 }
 
-.pagination .nav-links a {
+.nav-links a {
   color: var( --color-1 );
   text-decoration: none;
 }
-.pagination .nav-links a:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
-.pagination .nav-links .page-numbers {
+.nav-links .page-numbers, .nav-links .post-page-numbers {
   display: flex;
   flex-direction: column;
   width: 2rem;
@@ -96,10 +96,10 @@ ul.post-list>li .bottom a.read-more-btn {
   justify-content: center;
   text-align: center;
 }
-.pagination .nav-links span.page-numbers.current {
+.nav-links span.page-numbers.current, .nav-links span.post-page-numbers.current {
   font-weight: bold;
 }
-/* END POST LIST NAVIGATION*/
+/* END LIST NAVIGATION */
 
 /* WIDE AND FULL ALIGNMENT  */
 .container {
