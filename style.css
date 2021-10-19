@@ -41,7 +41,7 @@ ul.post-list>li {
   border-top: 9px solid var( --color-3 );
 }
 ul.post-list>li.sticky {
-  border-top: 9px double var( --color-3 );
+  padding-top: 9px;
 }
 ul.post-list .wp-post-image {
   object-fit: cover;
@@ -56,6 +56,7 @@ ul.post-list .the-excerpt {
   flex: 1 0 auto;
   margin: 0;
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 ul.post-list>li .bottom {
   padding: 1rem 1rem 2rem 1rem;
