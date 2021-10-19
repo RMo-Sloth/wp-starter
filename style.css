@@ -27,6 +27,7 @@ ul.post-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;
+  margin: 1rem;
   list-style: none;
   gap: 1rem;
 }
