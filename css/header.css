@@ -5,7 +5,7 @@
 
 .top-bar {
   display: flex;
-  background: var( --color-7);
+  background: var( --color-1);
   overflow: visible;
 }
 .top-bar>nav {
@@ -37,7 +37,7 @@ nav.navbar>ul>li>a {
   height: 50px;
   text-decoration: none;
   padding: 14px 16px;
-  color: var( --color-1);
+  color: var( --color-3 );
 }
 
 nav.navbar>ul>li>a:hover, nav.navbar>ul>li>a:focus {
@@ -69,12 +69,13 @@ nav.navbar>ul>li>ul>li>a {
   display: block;
   padding: 14px 16px;
   background: var( --color-1);
-  color: var( --color-7);
+  color: var( --color-3 );
   text-decoration: none;
   text-decoration: none;
   text-align: left;
 }
 
 nav.navbar>ul>li>ul>li>a:hover, nav.navbar>ul>li>ul>li>a:focus {
-  background-color: var( --color-2 );
+  background-color: var( --color-3 );
+  color: var( --color-1 );
 }

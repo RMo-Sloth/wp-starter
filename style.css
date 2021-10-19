@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-wrap: anywhere;
+  background: var( --color-3 );
 }
 
 /* POST LIST */
@@ -30,12 +31,13 @@ ul.post-list {
   gap: 1rem;
 }
 ul.post-list>li {
-  background: var( --color-3 );
+  background: var( --color-1 );
+  color: var( --color-3 );
   padding: 1rem;
-  border-top: 5px solid var( --color-1 );
+  border-top: 9px solid var( --color-3 );
 }
 ul.post-list>li.sticky {
-  border-top: 5px solid var( --color-7 );
+  border-top: 9px double var( --color-3 );
 }
 ul .wp-post-image {
   width: 100%;
@@ -51,7 +53,7 @@ ul.post-list>li h2 {
 ul.post-list>li .bottom a.read-more-btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  background: var( --color-7 );
+  background: var( --color-3 );
   font-weight: bold;
   color: var( --color-1 );
   text-decoration: none;
@@ -67,7 +69,6 @@ ul.post-list>li .bottom a.read-more-btn {
 /* POST LIST NAVIGATION */
 .pagination {
   margin: 1rem 0;
-  background: var( --color-7 );
   color: var( --color-1 );
 }
 .pagination .nav-links {
