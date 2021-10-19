@@ -10,7 +10,7 @@
       the_post_thumbnail();
     endif;
     the_title( '<h2>', '</h2>' );
-    the_excerpt();
+    printf( '<p class="the-excerpt">%s</p>',get_the_excerpt());
     printf( 
       '<div class="bottom"><a href="%s" class="read-more-btn">Read More...</a></div>',
       get_the_permalink() 

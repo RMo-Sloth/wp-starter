@@ -21,5 +21,7 @@ function theme_add_theme_support() {
       'color' => get_theme_mod( 'theme_color_1', '#FFF' )
     ]
   ]);
+
+  add_theme_support( 'post-thumbnails' );
 }
 add_action('after_setup_theme', 'theme_add_theme_support');
