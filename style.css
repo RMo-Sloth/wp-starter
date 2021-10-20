@@ -163,11 +163,44 @@ ul.post-list>li .bottom a.read-more-btn {
 .comments ul.comments-list ul.children {
   list-style: none;
   padding: 0 0 0 2rem;
-  margin: 0.5rem 0 0 0;
 }
 
-.comments li {
-  margin-bottom: 0.5rem;
+.comments li.comment {
+  margin-top: 0.5rem;
 }
+.comments li.comment .comment-body {
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+}
+.comments li.comment .comment-body>.comment-author {
+  display: block;
+  margin-bottom: 0;
+}
+.comments li.comment .comment-body>.comment-author>.says {
+  display: none;
+}
+.comments li.comment .comment-body>.comment-author>cite>a {
+  font-size: 1.5rem;
+  font-style: normal;
+  text-decoration: none;
+}
+.comments li.comment .comment-body>.comment-author>.avatar {
+  margin-right: 0.5rem;
+  float: left;
+}
+.comments li.comment .comment-body>.comment-meta {
+  display: inline-block;
+  font-style: italic;
+}
+.comments li.comment .comment-body>.comment-meta+* {
+  padding-top: 0.5rem;
+  clear: both;
+}
+
+.comments li.comment .comment-body>.reply {
+  text-align: right;
+}
+
 
 /* END COMMENTS */
