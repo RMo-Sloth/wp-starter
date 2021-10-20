@@ -36,6 +36,11 @@ input[type='checkbox'] {
 	width: auto;
 }
 
+pre {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
 /* block (container) elements */
 header, footer, aside, article, section, div {
 	clear: both;
