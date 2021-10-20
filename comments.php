@@ -2,7 +2,7 @@
 
 if( comments_open() === false ) return;
 
-print('<aside style="padding-top: 1rem; border-top: 2px solid black; margin-top: 2rem">');
+print('<aside style="" class="comments">');
     printf('<h1>%s</h1>', __('Comments', 'wp-starter') );
     print('<ul class="comments-list">');
     wp_list_comments();
