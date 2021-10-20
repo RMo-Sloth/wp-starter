@@ -2,7 +2,7 @@
 
 if( comments_open() === false ) return;
 
-print('<aside style="" class="comments">');
+print('<aside class="comments">');
     printf('<h1>%s</h1>', __('Comments', 'wp-starter') );
     print('<ul class="comments-list">');
     wp_list_comments([ 'avatar_size' => '64' ]);
