@@ -58,3 +58,38 @@
 .comments li.comment .comment-body>.reply {
     text-align: right;
 }
+
+/* Comment Navigation */
+
+.comments .comment-pagination {
+    color: var( --color-1);
+    display: flex;
+    max-width: 1000px;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto 0 auto;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.comments .comment-pagination .page-numbers {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: var( --color-1);
+    text-decoration: none;
+}
+
+.comments .comment-pagination a.page-numbers:hover {
+    text-decoration: underline;
+}
+
+.comments .comment-pagination .page-numbers.current {
+    font-weight: bold;
+}
+
+.comments .comment-pagination .page-numbers.prev, .comments .comment-pagination .page-numbers.next {
+    display: none;
+}
