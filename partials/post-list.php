@@ -9,7 +9,7 @@
     if( has_post_thumbnail() ):
       the_post_thumbnail();
     else:
-      printf('<img src="%s">', get_stylesheet_directory_uri() . '/assets/400x400.png' );
+      printf('<img src="%s" width="400" height="400">', get_stylesheet_directory_uri() . '/assets/400x400.png' );
     endif;
     the_title( '<h2>', '</h2>' );
     printf( '<p class="the-excerpt">%s</p>',get_the_excerpt());
