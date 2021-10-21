@@ -23,6 +23,7 @@
 
   the_posts_pagination([
     'class' => 'pagination',
-    'prev_next' => false
+    'prev_next' => false,
+    'show_all' => true
   ]);
 
