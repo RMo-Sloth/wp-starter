@@ -33,5 +33,13 @@ function theme_register_main_stylesheets() {
     [],
     wp_get_theme()->get('Version')
   );
+
+  if( get_comments_number() > 0 ):
+    wp_enqueue_style( 'comments-stylesheet',
+      get_stylesheet_directory_uri() . '/css/comments.css',
+      [],
+      wp_get_theme()->get('Version')
+    );
+  endif;
 }
 add_action( 'wp_enqueue_scripts', 'theme_register_main_stylesheets' );
