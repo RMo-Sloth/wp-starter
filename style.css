@@ -15,13 +15,6 @@ Tags: theme-options
 Domain Path: /languages
 */
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-wrap: anywhere;
-  background: var( --color-3 );
-}
-
 /* POST LIST */
 ul.post-list {
   display: flex;

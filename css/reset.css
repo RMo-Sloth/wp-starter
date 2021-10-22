@@ -13,6 +13,10 @@ html, body, p, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea,
 }
 
 body {
+	margin: 0;
+	padding: 0;
+	overflow-wrap: anywhere;
+	background: var( --color-3 );
 	overflow-x: hidden;
 }
 
