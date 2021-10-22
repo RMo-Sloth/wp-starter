@@ -9,6 +9,7 @@ printf('
 );
   wp_head();
 print('</head>');
+  printf( '<a href="#theme-skip-link-destination" id="theme-skip-link">%s</a>', __('Skip the navigation') );
   printf('<body class="%s"><div class="top-bar">', esc_attr( implode( ' ', get_body_class() ) ) );
     wp_body_open();
     
@@ -22,4 +23,5 @@ print('</head>');
       'container_class' => 'navbar',
       'depth' => '2']
     );
+    print( '<span id="theme-skip-link-destination">%s</span>');
   print('</div>');

@@ -79,3 +79,19 @@ nav.navbar>ul>li>ul>li>a:hover, nav.navbar>ul>li>ul>li>a:focus {
   background-color: var( --color-3 );
   color: var( --color-1 );
 }
+
+/* Skip Link */
+a#theme-skip-link {
+  position: fixed;
+  display: block;
+  padding: 1rem;
+  top: -500px;
+  left: 1rem;
+  display: block;
+  border-radius: 4px;
+  background-color: var( --color-3 );
+  border: 2px solid var( --color-1 );
+}
+a#theme-skip-link:focus {
+  top: 1rem;
+}
