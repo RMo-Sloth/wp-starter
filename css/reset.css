@@ -111,3 +111,28 @@ blockquote {
 	margin: 0 auto;
 }
 
+/*  */
+/* table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	padding: 0 1rem;
+}
+table>tbody>tr:nth-child(odd) {
+	background-color: rgba( 0, 0, 0, 0.1 );
+}
+table>tbody>tr:nth-child(even) {
+	background-color: rgba( 256, 256, 256, 0.1 );
+}
+table>thead>tr>th {
+	border-bottom: 2px solid var( --color-1 );
+	padding: 1px 0.5rem;
+}
+table>tbody>tr>td, table>tbody>tr>th {
+	border-right: 1px solid var( --color-1 );
+	padding: 1px 0.5rem;
+}
+table>tbody>tr>td:last-child {
+	border-right: none;
+}
+/* end table */
