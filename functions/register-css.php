@@ -1,6 +1,12 @@
 <?php 
 
 function theme_register_main_stylesheets() {
+  // html-elements
+  wp_enqueue_style( 'html-elements', 
+    get_stylesheet_directory_uri() . '/css/html-elements.css',
+    [],
+    wp_get_theme()->get('Version')
+  );
   // reset.css
   wp_enqueue_style( 'reset-stylesheet',
     get_stylesheet_directory_uri() . '/css/reset.css',
