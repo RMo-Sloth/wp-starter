@@ -78,8 +78,6 @@ img {
 blockquote {
 	border-left: 0.3rem solid var( --color-1 );
 	padding-left: 1rem;
-	margin-right: 1rem;
-	margin-left: 1rem;
 }
 
 .wp-block-pullquote blockquote {
