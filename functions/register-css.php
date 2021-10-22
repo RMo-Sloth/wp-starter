@@ -7,9 +7,9 @@ function theme_register_main_stylesheets() {
     [],
     wp_get_theme()->get('Version')
   );
-  // reset.css
-  wp_enqueue_style( 'reset-stylesheet',
-    get_stylesheet_directory_uri() . '/css/reset.css',
+  // blocks.css
+  wp_enqueue_style( 'blocks-stylesheet',
+    get_stylesheet_directory_uri() . '/css/blocks.css',
     [],
     wp_get_theme()->get('Version')
   );
