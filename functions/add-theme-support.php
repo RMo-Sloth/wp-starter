@@ -18,7 +18,11 @@ function theme_add_theme_support() {
     [
       'name'  => esc_attr( 'Color 1', 'wp-starter' ),
       'slug'  => 'color-1',
-      'color' => get_theme_mod( 'theme_color_1', '#FFF' )
+      'color' => get_theme_mod( 'theme_color_1', '#000' )
+    ], [
+      'name'  => esc_attr( 'Color 2', 'wp-starter' ),
+      'slug'  => 'color-2',
+      'color' => get_theme_mod( 'theme_color_2', '#FFF' )
     ]
   ]);
 

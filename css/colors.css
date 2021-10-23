@@ -10,3 +10,10 @@
 .has-color-1-background-color {
     background-color: var( --color-1 ) !important;
 }
+
+.has-color-2-color {
+    color: var( --color-3 ) !important;
+}
+.has-color-2-background-color {
+    background-color: var( --color-3 ) !important;
+}
