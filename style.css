@@ -30,8 +30,8 @@ ul.post-list>li {
   display: flex;
   flex-direction: column;
   background: var( --color-1 );
-  color: var( --color-3 );
-  border-top: 9px solid var( --color-3 );
+  color: var( --color-2 );
+  border-top: 9px solid var( --color-2 );
 }
 ul.post-list>li.sticky {
   padding-top: 9px;
@@ -62,7 +62,7 @@ ul.post-list>li h2 {
 ul.post-list>li .bottom a.read-more-btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  background: var( --color-3 );
+  background: var( --color-2 );
   font-weight: bold;
   color: var( --color-1 );
   text-decoration: none;

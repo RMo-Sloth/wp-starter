@@ -41,7 +41,7 @@ function theme_css_colors() {
     "<style>
       :root {
         --color-1: %s;
-        --color-3: %s;
+        --color-2: %s;
       }
     </style>",
     get_theme_mod( 'theme_color_1', '#000' ),

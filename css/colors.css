@@ -12,8 +12,8 @@
 }
 
 .has-color-2-color {
-    color: var( --color-3 ) !important;
+    color: var( --color-2) !important;
 }
 .has-color-2-background-color {
-    background-color: var( --color-3 ) !important;
+    background-color: var( --color-2 ) !important;
 }
