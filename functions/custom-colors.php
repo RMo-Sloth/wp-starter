@@ -37,15 +37,36 @@ function theme_customize_colors( $wp_customize ) {
 add_action( 'customize_register', 'theme_customize_colors' );
 
 function theme_css_colors() {
+  list($red_1, $yellow_1, $blue_1) = sscanf(get_theme_mod( 'theme_color_1', '#FFF' ), '#%2x%2x%2x');
+  list($red_2, $yellow_2, $blue_2) = sscanf(get_theme_mod( 'theme_color_2', '#FFF' ), '#%2x%2x%2x');
   printf( 
     "<style>
       :root {
         --color-1: %s;
         --color-2: %s;
       }
+      .has-color-1-color {
+        color: %s;
+      }
+      .has-color-2-color {
+        color: %s;
+      }
+
+      .has-color-1-background-color {
+        background-color: %s;
+      }
+      .has-color-2-background-color {
+          background-color: %s;
+      }
     </style>",
     get_theme_mod( 'theme_color_1', '#000' ),
     get_theme_mod( 'theme_color_2', '#FFF' ),
+    get_theme_mod( 'theme_color_1', '#000' ),
+    get_theme_mod( 'theme_color_2', '#FFF' ),
+    get_theme_mod( 'theme_color_1', '#000' ),
+    get_theme_mod( 'theme_color_2', '#FFF' ),
   );
+
+    // "rgb($red_1, $yellow_1, $blue_1)",
 }
 add_action( 'wp_head', 'theme_css_colors');
