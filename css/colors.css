@@ -1,9 +1,0 @@
-/* 
-    This file contains theme based color styles used by blocks
-    Colors are set in the customizer
-    Color classes are generated in add_theme_support( 'editor-color-palette', [...])
-*/
-
-.has-gradient-1-gradient-background {
-    background: linear-gradient(rgb(0,0,0) 33%, red 100%);
-}

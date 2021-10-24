@@ -33,12 +33,6 @@ function theme_register_main_stylesheets() {
     [],
     wp_get_theme()->get('Version')
   );
-  // colors.css
-  wp_enqueue_style( 'colors-stylesheet',
-    get_stylesheet_directory_uri() . '/css/colors.css',
-    [],
-    wp_get_theme()->get('Version')
-  );
 
   if( get_comments_number() > 0 ):
     wp_enqueue_style( 'comments-stylesheet',

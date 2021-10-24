@@ -37,8 +37,6 @@ function theme_customize_colors( $wp_customize ) {
 add_action( 'customize_register', 'theme_customize_colors' );
 
 function theme_css_colors() {
-  list($red_1, $yellow_1, $blue_1) = sscanf(get_theme_mod( 'theme_color_1', '#FFF' ), '#%2x%2x%2x');
-  list($red_2, $yellow_2, $blue_2) = sscanf(get_theme_mod( 'theme_color_2', '#FFF' ), '#%2x%2x%2x');
   printf( 
     "<style>
       :root {
@@ -58,6 +56,10 @@ function theme_css_colors() {
       .has-color-2-background-color {
           background-color: %s;
       }
+
+      .has-gradient-1-gradient-background {
+        background: linear-gradient( %s, %s );
+      }
     </style>",
     get_theme_mod( 'theme_color_1', '#000' ),
     get_theme_mod( 'theme_color_2', '#FFF' ),
@@ -65,8 +67,8 @@ function theme_css_colors() {
     get_theme_mod( 'theme_color_2', '#FFF' ),
     get_theme_mod( 'theme_color_1', '#000' ),
     get_theme_mod( 'theme_color_2', '#FFF' ),
+    get_theme_mod( 'theme_color_1', '#000' ) . ' 33%',
+    get_theme_mod( 'theme_color_2', '#000' ) .' 100%'
   );
-
-    // "rgb($red_1, $yellow_1, $blue_1)",
 }
 add_action( 'wp_head', 'theme_css_colors');
