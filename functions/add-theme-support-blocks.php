@@ -6,6 +6,8 @@ function theme_add_theme_support_blocks() {
 
   add_theme_support( 'responsive-embeds' );
 
+  add_theme_support( 'disable-custom-gradients' );
+
   add_theme_support( 'editor-color-palette', [
     [
       'name'  => esc_attr( 'Color 1', 'wp-starter' ),
