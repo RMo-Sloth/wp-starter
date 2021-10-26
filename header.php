@@ -23,5 +23,5 @@ print('</head>');
       'container_class' => 'navbar',
       'depth' => '2']
     );
-    print( '<span id="theme-skip-link-destination">%s</span>');
+    print( '<span id="theme-skip-link-destination"></span>');
   print('</div>');
