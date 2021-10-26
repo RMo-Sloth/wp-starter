@@ -1,18 +1,21 @@
 /* .wp-block-gallery */
-.wp-block-gallery, .wp-block-column   {
+
+.wp-block-gallery, .wp-block-column {
 	margin: 0 0 0.5rem 0;
 	padding: 0;
 }
 
 /* .wp-block-pullquote */
+
 .wp-block-pullquote blockquote {
 	border-left: 0;
 	padding-left: 0;
 }
 
 /* .wp-block-button */
+
 .wp-block-button {
-	margin:  0.5rem;
+	margin: 0.5rem;
 }
 
 .wp-block-button.is-style-squared>.wp-block-button__link {
@@ -20,11 +23,13 @@
 }
 
 /* wp caption */
+
 .wp-caption {
 	max-width: 100%;
 }
 
 /* block alignment */
+
 .alignright {
 	float: right;
 	margin: 0.5rem 0 0.5rem 0.5rem;
@@ -38,4 +43,18 @@
 .aligncenter {
 	display: block;
 	margin: 0 auto;
+}
+
+.alignwide {
+	position: relative;
+	left: -1rem;
+	width: calc( 100% + 2rem);
+	padding: 0;
+}
+
+.alignfull {
+	position: relative;
+	left: calc( 50% - 50vw);
+	width: 100vw;
+	padding: 0 0;
 }
