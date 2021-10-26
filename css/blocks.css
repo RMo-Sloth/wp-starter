@@ -19,6 +19,11 @@
 	border-radius: 0;
 }
 
+/* wp caption */
+.wp-caption {
+	max-width: 100%;
+}
+
 /* block alignment */
 .alignright {
 	float: right;
