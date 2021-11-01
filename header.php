@@ -19,6 +19,7 @@ print('</head>');
 
     wp_nav_menu(
       ['theme_location' => 'primary',
+      'menu_class' => 'menu flex-list',
       'container' => 'nav',
       'container_class' => 'navbar',
       'depth' => '2']
