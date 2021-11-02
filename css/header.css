@@ -20,6 +20,7 @@
 /* First Level Nav */
 
 nav.navbar>ul.flex-list>li>a {
+  position: relative;
   box-sizing: border-box;
   height: 50px;
   padding: 14px 16px;
@@ -29,6 +30,19 @@ nav.navbar>ul.flex-list>li>a {
 nav.navbar>ul.flex-list>li>a:hover, nav.navbar>ul.flex-list>li>a:focus {
   background-color: var( --color-2 );
   color: var( --color-1 );
+}
+
+nav.navbar>ul.menu.flex-list>li.menu-item-has-children>a::after {
+  position: absolute;
+  right: 0.1rem;
+  content: '';
+  border-top: 0.25rem solid var( --color-2 );
+  border-right: 0.3rem solid transparent;
+  border-left: 0.3rem solid transparent;
+}
+
+nav.navbar>ul.menu.flex-list>li>a:hover::after {
+  border-top: 0.25rem solid var( --color-1 );
 }
 
 /* Second Level Nav */
