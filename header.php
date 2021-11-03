@@ -21,8 +21,18 @@ print('</head>');
       ['theme_location' => 'primary',
       'menu_class' => 'menu flex-list',
       'container' => 'nav',
+      'container_id' => 'regular-nav',
       'container_class' => 'navbar',
       'depth' => '2']
     );
     print( '<span id="theme-skip-link-destination"></span>');
   print('</div>');
+
+  wp_nav_menu(
+    ['theme_location' => 'primary',
+    'menu_class' => 'menu flex-list',
+    'container' => 'nav',
+    'container_id' => 'mobile-nav',
+    'container_class' => 'navbar',
+    'depth' => '2']
+  );

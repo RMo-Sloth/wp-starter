@@ -144,7 +144,7 @@ ul.post-list>li .bottom a.read-more-btn {
 .comments {
   padding-top: 1rem;
   border-top: 2px solid var( --color-1);
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 
 /* FLEX LIST */
@@ -162,10 +162,6 @@ ul.flex-list>li a {
   align-items: center;
   padding: 0.5rem 0;
   text-decoration: none;
-}
-
-ul.flex-list>li.current-menu-item>a { 
-  border-bottom: 2px solid var( --color-2 );
 }
 
 ul.flex-list>li>a:hover, ul.flex-list>li>a:focus {
