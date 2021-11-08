@@ -2,9 +2,6 @@
 
 This template is based on [the official Theme Handbook](https://developer.wordpress.org/themes/). If in doubt use this as reference. 
 
-
-
-
 ## Environment Setup
 
 Before you start developing your website set up your local wordpress environment for development.
@@ -16,9 +13,6 @@ Before you start developing your website set up your local wordpress environment
 - [ ] ```define( 'WP_DEBUG_LOG', true );```
 - [ ] ```define( 'WP_DEBUG_DISPLAY', true );```
 
-
-
-
 ## Install this theme
 
 If you are reading this you probably already have this theme installed. Nevertheless there are 2 recommended ways to install this theme.
@@ -28,43 +22,24 @@ If you are reading this you probably already have this theme installed. Neverthe
 
 Enable the theme from inside wordpress.
 
-
-
-
-
 ## Set up version control
 
-If you are using git you probably want to set up version control. 
+If you are using git you probably want to set up version control.
 
 1. Create an empty repository on e.g. GitHub
 2. Navigate into the root folder of your theme
-3. Connect your theme to that repository: `git set-url origin respository_name`. Where `repository_name` is the name of the repository you just created.
+3. Connect your theme to that repository: `git remote set-url origin repository_url`. Where `repository_url` is the url of the repository you just created.
 4. Push your theme to your repository: `git push`.
 
 The rest of the documentation does not mention git anymore. But you'd do well to make frequent commits.
-
-
-
 
 ## Load the test-data
 
 Import the unit test data. More details here: [ https://codex.wordpress.org/Theme_Unit_Test ]( https://codex.wordpress.org/Theme_Unit_Test )
 
-
-
-
-
-
-
-
 ## Setup your text-domain
 
 For translations wordpress requires a text-domain. In this template it is `wp-starter`. You want to find and replace all occurences of `wp-starter` with the text domain you want to use. Naming it something like your theme name is a good idea.
-
-
-
-
-
 
 ## Update the comments in `style.css`
 
