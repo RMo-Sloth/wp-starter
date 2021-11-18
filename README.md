@@ -80,9 +80,18 @@ There is a basic implementation for a navigation menu of a max of 2 depth. The m
 ## Footer
 There is a basic implementation of a footer. Sidebars have been registered in `functions.php` (called: footer-1, footer-2 and footer-3). They are loaded in the footer template `footer.php`. Note that the sidebars are formatted in a block-editor friendly output. 
 
+## index.php
+Note that this theme has a `404.php`, `archive.php`, `front-page.php`, `single.php`, `page.php` and `single.php` already have implementations. They override `index.php`, so disable them by adding `__` before these file names. For details [ read more about the template hierarchy ](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 
+`index.php` is a fallback for all pages. Make sure it implements a solution that works for both singular pages/posts and archives.
 
+## page.php
 
+## post.php
+
+## 404.php
+
+## front-page.php
 
 ## Add a theme screenshot
 
