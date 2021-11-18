@@ -15,6 +15,28 @@ Tags: theme-options
 Domain Path: /languages
 */
 
+:root {
+  --color-1: #000;
+  --color-2: #FFF;
+}
+.has-color-1-color {
+  color: --color-1;
+}
+.has-color-2-color {
+  color: --color-2;
+}
+
+.has-color-1-background-color {
+  background-color: --color-1;
+}
+.has-color-2-background-color {
+    background-color: --color-2;
+}
+
+.has-gradient-1-gradient-background {
+  background: linear-gradient( --color-1 33%, --color-1 100% );
+}
+
 .container {
   max-width: 1000px;
   padding: 1rem;
