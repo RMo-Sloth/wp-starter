@@ -20,8 +20,6 @@ If you are reading this you probably already have this theme installed. Neverthe
 1. Download from the wordpress repository.
 2. Navigate to the `wp-content/themes` folder using the cli. Clone the theme in a folder to `git clone https://github.com/RMo-Sloth/wp-starter.git theme_name`. Where `theme_name` is the name of your theme.
 
-Enable the theme from inside wordpress.
-
 ## Set up version control
 
 If you are using git you probably want to set up version control.
@@ -61,8 +59,10 @@ Text Domain: my-theme-name
 Tags: theme-options
 Domain Path: /languages
 ```
+Enable the theme from inside wordpress.
 
-
+## setup your assets
+Load the relevant fonts and colors for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://codex.wordpress.org/Theme_Customization_API ). You probably want to load the dynamic colors and fonts css during the `wp_head` hook.
 
 
 
