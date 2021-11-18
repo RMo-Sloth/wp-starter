@@ -62,11 +62,17 @@ Domain Path: /languages
 Enable the theme from inside wordpress.
 
 ## setup your assets
-Load the relevant fonts and colors for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://codex.wordpress.org/Theme_Customization_API ). You probably want to load the dynamic colors and fonts css during the `wp_head` hook.
+Load the relevant fonts and colors for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://codex.wordpress.org/Theme_Customization_API ). You probably want to load the dynamic colors and fonts css during the `wp_head` hook. 
 
-
-
-
+## style html
+Setup:
+* `body`: background or background-image, default font, font-color.
+* `headers`: fonts, color, font-size, etc.
+* `p`: font-size 
+* `ul`, `ol`, `li`: 
+* `table`, `tr`, `th`, `tbody`, `thead`, `tfoot`, `td`, `caption`: 
+* `form`, `textarea`, all `input`-types: 
+* `button`: 
 
 ## Header -> Navigation
 There is a basic implementation for a navigation menu of a max of 2 depth. The menu s registered in the `functions.php` file, invoked in the `header.php` file and styled in `style.css` file. You should/could replace it with a more advanced implementation that suits your needs.
