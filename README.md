@@ -61,8 +61,29 @@ Domain Path: /languages
 ```
 Enable the theme from inside wordpress.
 
-## setup your assets
-Load the relevant fonts and colors for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://codex.wordpress.org/Theme_Customization_API ). You probably want to load the dynamic colors and fonts css during the `wp_head` hook. 
+## Load your assets
+
+### fonts
+Load the relevant fonts for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/).
+
+### colors
+
+*static:*
+
+Load the relevant colors to the `style.css` file. This theme has a default implementation the `style.css` file. Add your colr scheme to it.
+```
+:root {
+  --color-1: #000;
+  --color-2: #FFF;
+}
+```
+Keep these default variables. They are being used in this template. You will replace them later in the process.
+
+*dynamic:*
+
+If you want dynamic colors add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/ ). You may want to use `WP_Customize_Color_Control` as Control.
+
+Load the dynamic colors during the `wp_head` hook.
 
 ## style html
 Setup:
@@ -92,6 +113,11 @@ Note that this theme has a `404.php`, `archive.php`, `front-page.php`, `single.p
 ## 404.php
 
 ## front-page.php
+
+## Cleanup
+
+### css
+Remove the global variables from style.css. Ensure they are no longer in use by searching the theme ( `CTR+SHIFT+F` in vs-code ).
 
 ## Add a theme screenshot
 
