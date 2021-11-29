@@ -64,7 +64,30 @@ Enable the theme from inside wordpress.
 ## Load your assets
 
 ### fonts
-Load the relevant fonts for your theme. If you want them to be dynamic add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/).
+
+*static*
+
+Load the relevant fonts for your theme in `register-css.php`. You could also import it in your `style.css` using `@import`. However loading using `@import` is commonly discouraged; it delays the http request to retreive the fonts a little.
+```
+wp_enqueue_style( 'theme-fonts',
+    'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap',
+    []
+);
+```
+If you want to preconnect to the external domain hosting the fonts, add them as highest priority to the `wp_head` hook. This will load the code in the `wp_head()` call in the `header.php`.
+```
+function theme_preconnect() {
+  print('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
+  print('<link rel="preconnect" href="https://fonts.googleapis.com">');
+}
+add_action( 'wp_head', 'theme_preconnect', 0 );
+```
+
+
+*dynamic*
+ Add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/).
+
+ You can add the fonts just like the static approach ( above ) Load the relevant font using a switch statement, checking against the setting you created in the customizer.
 
 ### colors
 
@@ -81,7 +104,9 @@ Keep these default variables. They are being used in this template. You will rep
 
 *dynamic:*
 
-If you want dynamic colors add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/ ). You may want to use `WP_Customize_Color_Control` as Control.
+If you want dynamic colors add an implementation using the customizer during the `customize_register` hook. [ More about setting up the customizer ]( https://developer.wordpress.org/themes/customize-api/ ).
+
+
 
 Load the dynamic colors during the `wp_head` hook.
 
