@@ -18,6 +18,10 @@ Domain Path: /languages
 :root {
   --color-1: #000;
   --color-2: #FFF;
+  --color-3: #119; /* accent color */
+
+  --font-1: 'Georgia', serif;
+  --font-2: 'Verdana', sans-serif;
 }
 .has-color-1-color {
   color: --color-1;
