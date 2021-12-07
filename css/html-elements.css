@@ -61,6 +61,11 @@ cite {
 	font-family: var( --color-2 );
 }
 
+code {
+	display: block;
+	padding: 1rem;
+}
+
 label {
 	margin-top: 0.5rem;
 	display: block;
