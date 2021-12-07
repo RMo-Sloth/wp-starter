@@ -38,6 +38,7 @@ nav#regular-nav>ul.flex-list>li>a {
   height: 50px;
   padding: 14px 16px;
   color: var( --color-2 );
+  font-family: var( --font-1 );
 }
   
 nav#regular-nav>ul.flex-list>li>a:hover, nav.navbar>ul.flex-list>li>a:focus {
@@ -84,6 +85,7 @@ nav#regular-nav>ul>li>ul>li>a {
   text-decoration: none;
   text-decoration: none;
   text-align: left;
+  font-family: var( --font-1 );
 }
 
 nav.navbar>ul>li>ul>li>a:hover, nav.navbar>ul>li>ul>li>a:focus {
